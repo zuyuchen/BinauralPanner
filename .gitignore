@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+**/DerivedData/
+**/xcuserdata/
+**/*.xcuserstate
+*.xcworkspace
+
+# JUCE build outputs
+Builds/
+build/
+
+# Plugin binaries (distributed via GitHub Releases instead)
+*.vst3
+*.component
+*.app
+*.aax
+
+# IDE files
+*.code-workspace
+.vscode/
+.idea/
+
+# Python (for sofa_to_wav tool)
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env

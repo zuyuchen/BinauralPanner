@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="g6EOCs" name="BinauralPanner" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginManufacturer="Zuyu">
+  <MAINGROUP id="wbFrQz" name="BinauralPanner">
+    <GROUP id="{6D321499-8E53-2BD2-6161-000F06F605FF}" name="Source">
+      <GROUP id="{EDF54BA2-D861-EDDB-9D01-5D40296464F5}" name="dsp">
+        <FILE id="pXqv9a" name="BinauralConvolver.cpp" compile="1" resource="0"
+              file="Source/BinauralConvolver.cpp"/>
+        <FILE id="bG1NZj" name="BinauralConvolver.h" compile="0" resource="0"
+              file="Source/BinauralConvolver.h"/>
+      </GROUP>
+      <FILE id="S8j2Ug" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="XkVkss" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="oklMlj" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="oHCs7z" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+    <GROUP id="{720A15EF-43D1-48B1-B2F6-6B1A1DE9090D}" name="hrir_wav">
+      <FILE id="yxkBPb" name="azi_-10_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-10_L.wav"/>
+      <FILE id="qMSKT5" name="azi_-10_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-10_R.wav"/>
+      <FILE id="Pcj7Gx" name="azi_-10_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-20_L.wav"/>
+      <FILE id="U5ixIm" name="azi_-10_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-20_R.wav"/>
+      <FILE id="JIHwFv" name="azi_-10_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-30_L.wav"/>
+      <FILE id="dptd9U" name="azi_-10_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-30_R.wav"/>
+      <FILE id="Zc7FYi" name="azi_-10_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-40_L.wav"/>
+      <FILE id="q4Hwpe" name="azi_-10_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-40_R.wav"/>
+      <FILE id="MDjf6T" name="azi_-10_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-50_L.wav"/>
+      <FILE id="W8TtrR" name="azi_-10_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-50_R.wav"/>
+      <FILE id="bvmI34" name="azi_-10_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-60_L.wav"/>
+      <FILE id="Xk1taW" name="azi_-10_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-60_R.wav"/>
+      <FILE id="Mj1gLd" name="azi_-10_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-70_L.wav"/>
+      <FILE id="dEKQvz" name="azi_-10_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-70_R.wav"/>
+      <FILE id="uQZsBS" name="azi_-10_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-80_L.wav"/>
+      <FILE id="zhFaNR" name="azi_-10_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-80_R.wav"/>
+      <FILE id="cTKKXl" name="azi_-10_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-90_L.wav"/>
+      <FILE id="RgJXby" name="azi_-10_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_-90_R.wav"/>
+      <FILE id="LfxrIU" name="azi_-10_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_0_L.wav"/>
+      <FILE id="aFg0jN" name="azi_-10_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_0_R.wav"/>
+      <FILE id="DLOIhG" name="azi_-10_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_10_L.wav"/>
+      <FILE id="SGM92X" name="azi_-10_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_10_R.wav"/>
+      <FILE id="gcsBIC" name="azi_-10_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_20_L.wav"/>
+      <FILE id="agSxW0" name="azi_-10_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_20_R.wav"/>
+      <FILE id="Quzah4" name="azi_-10_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_30_L.wav"/>
+      <FILE id="oUPQhu" name="azi_-10_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_30_R.wav"/>
+      <FILE id="NRwnwa" name="azi_-10_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_40_L.wav"/>
+      <FILE id="IU6V45" name="azi_-10_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_40_R.wav"/>
+      <FILE id="NX8vV0" name="azi_-10_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_50_L.wav"/>
+      <FILE id="mjpYAn" name="azi_-10_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_50_R.wav"/>
+      <FILE id="d1IBdc" name="azi_-10_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_60_L.wav"/>
+      <FILE id="oIFJ2j" name="azi_-10_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_60_R.wav"/>
+      <FILE id="it15xY" name="azi_-10_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_70_L.wav"/>
+      <FILE id="ubGWbQ" name="azi_-10_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_70_R.wav"/>
+      <FILE id="d340OS" name="azi_-10_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_80_L.wav"/>
+      <FILE id="jJ1axn" name="azi_-10_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_80_R.wav"/>
+      <FILE id="h0GRAJ" name="azi_-10_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_90_L.wav"/>
+      <FILE id="rOPxfq" name="azi_-10_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-10_ele_90_R.wav"/>
+      <FILE id="L04S02" name="azi_-20_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-10_L.wav"/>
+      <FILE id="awoD45" name="azi_-20_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-10_R.wav"/>
+      <FILE id="euxCkQ" name="azi_-20_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-20_L.wav"/>
+      <FILE id="e3xM6F" name="azi_-20_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-20_R.wav"/>
+      <FILE id="AkH87l" name="azi_-20_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-30_L.wav"/>
+      <FILE id="UXIjfR" name="azi_-20_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-30_R.wav"/>
+      <FILE id="eSr1cy" name="azi_-20_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-40_L.wav"/>
+      <FILE id="tSUAfI" name="azi_-20_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-40_R.wav"/>
+      <FILE id="nT06qC" name="azi_-20_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-50_L.wav"/>
+      <FILE id="EOvidd" name="azi_-20_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-50_R.wav"/>
+      <FILE id="hWoXEf" name="azi_-20_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-60_L.wav"/>
+      <FILE id="H9FkSo" name="azi_-20_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-60_R.wav"/>
+      <FILE id="HCiJU1" name="azi_-20_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-70_L.wav"/>
+      <FILE id="mLK3Gi" name="azi_-20_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-70_R.wav"/>
+      <FILE id="EBQnkm" name="azi_-20_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-80_L.wav"/>
+      <FILE id="WMUzd3" name="azi_-20_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-80_R.wav"/>
+      <FILE id="qQDiEg" name="azi_-20_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-90_L.wav"/>
+      <FILE id="V0HTF7" name="azi_-20_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_-90_R.wav"/>
+      <FILE id="eoKEdZ" name="azi_-20_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_0_L.wav"/>
+      <FILE id="oDmlel" name="azi_-20_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_0_R.wav"/>
+      <FILE id="yrt0VZ" name="azi_-20_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_10_L.wav"/>
+      <FILE id="OCJd6m" name="azi_-20_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_10_R.wav"/>
+      <FILE id="lVbvKi" name="azi_-20_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_20_L.wav"/>
+      <FILE id="cmxFyg" name="azi_-20_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_20_R.wav"/>
+      <FILE id="C4Uzxb" name="azi_-20_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_30_L.wav"/>
+      <FILE id="NV1Vgo" name="azi_-20_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_30_R.wav"/>
+      <FILE id="OxpYXx" name="azi_-20_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_40_L.wav"/>
+      <FILE id="YEfJOv" name="azi_-20_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_40_R.wav"/>
+      <FILE id="puTaOy" name="azi_-20_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_50_L.wav"/>
+      <FILE id="Csg5jy" name="azi_-20_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_50_R.wav"/>
+      <FILE id="k6SwCe" name="azi_-20_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_60_L.wav"/>
+      <FILE id="ds8oKh" name="azi_-20_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_60_R.wav"/>
+      <FILE id="U6K2BB" name="azi_-20_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_70_L.wav"/>
+      <FILE id="FlKdc2" name="azi_-20_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_70_R.wav"/>
+      <FILE id="RzZmwi" name="azi_-20_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_80_L.wav"/>
+      <FILE id="gOsd6b" name="azi_-20_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_80_R.wav"/>
+      <FILE id="oINQLe" name="azi_-20_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_90_L.wav"/>
+      <FILE id="HWCU3G" name="azi_-20_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-20_ele_90_R.wav"/>
+      <FILE id="AQZnf0" name="azi_-30_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-10_L.wav"/>
+      <FILE id="OXs1Rz" name="azi_-30_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-10_R.wav"/>
+      <FILE id="L0OrCd" name="azi_-30_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-20_L.wav"/>
+      <FILE id="ZkvuRL" name="azi_-30_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-20_R.wav"/>
+      <FILE id="nTfB1R" name="azi_-30_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-30_L.wav"/>
+      <FILE id="NaW2JK" name="azi_-30_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-30_R.wav"/>
+      <FILE id="JEfjg6" name="azi_-30_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-40_L.wav"/>
+      <FILE id="onYvKG" name="azi_-30_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-40_R.wav"/>
+      <FILE id="uRvgv6" name="azi_-30_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-50_L.wav"/>
+      <FILE id="Aw8uUe" name="azi_-30_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-50_R.wav"/>
+      <FILE id="JBpvQu" name="azi_-30_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-60_L.wav"/>
+      <FILE id="LR4MiF" name="azi_-30_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-60_R.wav"/>
+      <FILE id="qY8aEG" name="azi_-30_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-70_L.wav"/>
+      <FILE id="DIUhkK" name="azi_-30_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-70_R.wav"/>
+      <FILE id="i8ABQD" name="azi_-30_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-80_L.wav"/>
+      <FILE id="DBgskm" name="azi_-30_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-80_R.wav"/>
+      <FILE id="PtpWuf" name="azi_-30_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-90_L.wav"/>
+      <FILE id="EeYvO1" name="azi_-30_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_-90_R.wav"/>
+      <FILE id="v9xF6l" name="azi_-30_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_0_L.wav"/>
+      <FILE id="q5QJJW" name="azi_-30_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_0_R.wav"/>
+      <FILE id="MKz7QJ" name="azi_-30_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_10_L.wav"/>
+      <FILE id="pXin5r" name="azi_-30_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_10_R.wav"/>
+      <FILE id="VrF4Bn" name="azi_-30_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_20_L.wav"/>
+      <FILE id="gfdFQk" name="azi_-30_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_20_R.wav"/>
+      <FILE id="JZdAIe" name="azi_-30_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_30_L.wav"/>
+      <FILE id="QSjswi" name="azi_-30_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_30_R.wav"/>
+      <FILE id="D2A5tg" name="azi_-30_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_40_L.wav"/>
+      <FILE id="Awonh4" name="azi_-30_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_40_R.wav"/>
+      <FILE id="DiW55g" name="azi_-30_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_50_L.wav"/>
+      <FILE id="yyMMy9" name="azi_-30_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_50_R.wav"/>
+      <FILE id="nNSgGv" name="azi_-30_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_60_L.wav"/>
+      <FILE id="dSaNzp" name="azi_-30_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_60_R.wav"/>
+      <FILE id="MLEF6I" name="azi_-30_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_70_L.wav"/>
+      <FILE id="StwDad" name="azi_-30_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_70_R.wav"/>
+      <FILE id="XfNMvo" name="azi_-30_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_80_L.wav"/>
+      <FILE id="tYgvlZ" name="azi_-30_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_80_R.wav"/>
+      <FILE id="NCm9Xr" name="azi_-30_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_90_L.wav"/>
+      <FILE id="Wl40bB" name="azi_-30_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-30_ele_90_R.wav"/>
+      <FILE id="hHJsEv" name="azi_-40_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-10_L.wav"/>
+      <FILE id="ZCXa3K" name="azi_-40_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-10_R.wav"/>
+      <FILE id="AHMRQs" name="azi_-40_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-20_L.wav"/>
+      <FILE id="bW9S6k" name="azi_-40_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-20_R.wav"/>
+      <FILE id="ECVLzd" name="azi_-40_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-30_L.wav"/>
+      <FILE id="i05WLm" name="azi_-40_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-30_R.wav"/>
+      <FILE id="xl3Hjs" name="azi_-40_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-40_L.wav"/>
+      <FILE id="BFHjUg" name="azi_-40_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-40_R.wav"/>
+      <FILE id="qKQq2I" name="azi_-40_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-50_L.wav"/>
+      <FILE id="lc4XsO" name="azi_-40_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-50_R.wav"/>
+      <FILE id="rTM9DF" name="azi_-40_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-60_L.wav"/>
+      <FILE id="kaj8Ki" name="azi_-40_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-60_R.wav"/>
+      <FILE id="fSbcau" name="azi_-40_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-70_L.wav"/>
+      <FILE id="ljiVzA" name="azi_-40_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-70_R.wav"/>
+      <FILE id="w0I4rG" name="azi_-40_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-80_L.wav"/>
+      <FILE id="apQ8tK" name="azi_-40_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-80_R.wav"/>
+      <FILE id="PYPsTX" name="azi_-40_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-90_L.wav"/>
+      <FILE id="B6SJs9" name="azi_-40_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_-90_R.wav"/>
+      <FILE id="JjpbfY" name="azi_-40_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_0_L.wav"/>
+      <FILE id="r7BxFs" name="azi_-40_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_0_R.wav"/>
+      <FILE id="a6Lm0F" name="azi_-40_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_10_L.wav"/>
+      <FILE id="r48Pi5" name="azi_-40_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_10_R.wav"/>
+      <FILE id="TgzkUb" name="azi_-40_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_20_L.wav"/>
+      <FILE id="ONYdtJ" name="azi_-40_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_20_R.wav"/>
+      <FILE id="UoFnEN" name="azi_-40_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_30_L.wav"/>
+      <FILE id="E5JAQq" name="azi_-40_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_30_R.wav"/>
+      <FILE id="l7b5V3" name="azi_-40_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_40_L.wav"/>
+      <FILE id="BqfCVS" name="azi_-40_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_40_R.wav"/>
+      <FILE id="LRl35Q" name="azi_-40_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_50_L.wav"/>
+      <FILE id="G2YAJs" name="azi_-40_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_50_R.wav"/>
+      <FILE id="GeNtuL" name="azi_-40_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_60_L.wav"/>
+      <FILE id="pOQceb" name="azi_-40_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_60_R.wav"/>
+      <FILE id="j8kot1" name="azi_-40_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_70_L.wav"/>
+      <FILE id="sOo4cs" name="azi_-40_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_70_R.wav"/>
+      <FILE id="pAFRHA" name="azi_-40_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_80_L.wav"/>
+      <FILE id="MLU4tu" name="azi_-40_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_80_R.wav"/>
+      <FILE id="LbMwZp" name="azi_-40_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_90_L.wav"/>
+      <FILE id="KiPFXe" name="azi_-40_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-40_ele_90_R.wav"/>
+      <FILE id="p34K7U" name="azi_-50_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-10_L.wav"/>
+      <FILE id="kG284Z" name="azi_-50_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-10_R.wav"/>
+      <FILE id="A10sPY" name="azi_-50_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-20_L.wav"/>
+      <FILE id="nZanlO" name="azi_-50_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-20_R.wav"/>
+      <FILE id="NJ1l6g" name="azi_-50_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-30_L.wav"/>
+      <FILE id="wxj6Nn" name="azi_-50_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-30_R.wav"/>
+      <FILE id="W9QuPI" name="azi_-50_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-40_L.wav"/>
+      <FILE id="YXAYWW" name="azi_-50_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-40_R.wav"/>
+      <FILE id="vb4GBO" name="azi_-50_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-50_L.wav"/>
+      <FILE id="exrZ4T" name="azi_-50_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-50_R.wav"/>
+      <FILE id="OezQs9" name="azi_-50_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-60_L.wav"/>
+      <FILE id="UaAtwq" name="azi_-50_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-60_R.wav"/>
+      <FILE id="Pz0Zy7" name="azi_-50_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-70_L.wav"/>
+      <FILE id="OLg3sV" name="azi_-50_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-70_R.wav"/>
+      <FILE id="slpoXV" name="azi_-50_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-80_L.wav"/>
+      <FILE id="jJX5r5" name="azi_-50_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-80_R.wav"/>
+      <FILE id="qzQ0VV" name="azi_-50_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-90_L.wav"/>
+      <FILE id="hgNSW4" name="azi_-50_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_-90_R.wav"/>
+      <FILE id="oo00iz" name="azi_-50_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_0_L.wav"/>
+      <FILE id="A4HSk1" name="azi_-50_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_0_R.wav"/>
+      <FILE id="FRc1yr" name="azi_-50_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_10_L.wav"/>
+      <FILE id="IXuneo" name="azi_-50_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_10_R.wav"/>
+      <FILE id="memIXa" name="azi_-50_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_20_L.wav"/>
+      <FILE id="vs4mvT" name="azi_-50_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_20_R.wav"/>
+      <FILE id="qAFqXG" name="azi_-50_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_30_L.wav"/>
+      <FILE id="U70bu6" name="azi_-50_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_30_R.wav"/>
+      <FILE id="NIZmk0" name="azi_-50_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_40_L.wav"/>
+      <FILE id="y6SY4q" name="azi_-50_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_40_R.wav"/>
+      <FILE id="Yb2TK6" name="azi_-50_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_50_L.wav"/>
+      <FILE id="zmUxuC" name="azi_-50_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_50_R.wav"/>
+      <FILE id="Thx6J7" name="azi_-50_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_60_L.wav"/>
+      <FILE id="usGuhC" name="azi_-50_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_60_R.wav"/>
+      <FILE id="MEahwL" name="azi_-50_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_70_L.wav"/>
+      <FILE id="VILXZV" name="azi_-50_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_70_R.wav"/>
+      <FILE id="bZxLxi" name="azi_-50_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_80_L.wav"/>
+      <FILE id="UeHRc7" name="azi_-50_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_80_R.wav"/>
+      <FILE id="znuJXp" name="azi_-50_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_90_L.wav"/>
+      <FILE id="Wvl0nS" name="azi_-50_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-50_ele_90_R.wav"/>
+      <FILE id="v3uCCk" name="azi_-60_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-10_L.wav"/>
+      <FILE id="jaJrfc" name="azi_-60_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-10_R.wav"/>
+      <FILE id="Mfjln3" name="azi_-60_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-20_L.wav"/>
+      <FILE id="Ms6H5t" name="azi_-60_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-20_R.wav"/>
+      <FILE id="prtrPM" name="azi_-60_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-30_L.wav"/>
+      <FILE id="vDrpUl" name="azi_-60_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-30_R.wav"/>
+      <FILE id="MOicRf" name="azi_-60_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-40_L.wav"/>
+      <FILE id="eHeuu7" name="azi_-60_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-40_R.wav"/>
+      <FILE id="GOlDkW" name="azi_-60_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-50_L.wav"/>
+      <FILE id="QEFYA2" name="azi_-60_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-50_R.wav"/>
+      <FILE id="NJu34m" name="azi_-60_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-60_L.wav"/>
+      <FILE id="sXj7oH" name="azi_-60_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-60_R.wav"/>
+      <FILE id="X8wgfr" name="azi_-60_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-70_L.wav"/>
+      <FILE id="hfCGjV" name="azi_-60_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-70_R.wav"/>
+      <FILE id="DUta69" name="azi_-60_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-80_L.wav"/>
+      <FILE id="V8PSxI" name="azi_-60_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-80_R.wav"/>
+      <FILE id="gA7ipC" name="azi_-60_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-90_L.wav"/>
+      <FILE id="Ws0Fir" name="azi_-60_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_-90_R.wav"/>
+      <FILE id="QCFB37" name="azi_-60_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_0_L.wav"/>
+      <FILE id="tCvbW1" name="azi_-60_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_0_R.wav"/>
+      <FILE id="QGCind" name="azi_-60_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_10_L.wav"/>
+      <FILE id="eKwmd6" name="azi_-60_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_10_R.wav"/>
+      <FILE id="tld9eL" name="azi_-60_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_20_L.wav"/>
+      <FILE id="ND6vYA" name="azi_-60_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_20_R.wav"/>
+      <FILE id="ExD52v" name="azi_-60_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_30_L.wav"/>
+      <FILE id="yKkiVO" name="azi_-60_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_30_R.wav"/>
+      <FILE id="VWu5ZS" name="azi_-60_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_40_L.wav"/>
+      <FILE id="bwZWmU" name="azi_-60_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_40_R.wav"/>
+      <FILE id="b0iYo2" name="azi_-60_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_50_L.wav"/>
+      <FILE id="MS1ABy" name="azi_-60_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_50_R.wav"/>
+      <FILE id="bdFwBT" name="azi_-60_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_60_L.wav"/>
+      <FILE id="gQQE4E" name="azi_-60_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_60_R.wav"/>
+      <FILE id="iTglXD" name="azi_-60_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_70_L.wav"/>
+      <FILE id="bve3bQ" name="azi_-60_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_70_R.wav"/>
+      <FILE id="BrKBLl" name="azi_-60_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_80_L.wav"/>
+      <FILE id="RZRFDh" name="azi_-60_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_80_R.wav"/>
+      <FILE id="CoeZcT" name="azi_-60_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_90_L.wav"/>
+      <FILE id="k4DxXZ" name="azi_-60_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-60_ele_90_R.wav"/>
+      <FILE id="CNdfgx" name="azi_-70_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-10_L.wav"/>
+      <FILE id="lx7x0q" name="azi_-70_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-10_R.wav"/>
+      <FILE id="HPUWmT" name="azi_-70_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-20_L.wav"/>
+      <FILE id="Dlb50o" name="azi_-70_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-20_R.wav"/>
+      <FILE id="nhPg2V" name="azi_-70_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-30_L.wav"/>
+      <FILE id="MGq4z9" name="azi_-70_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-30_R.wav"/>
+      <FILE id="wmg4br" name="azi_-70_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-40_L.wav"/>
+      <FILE id="DxRBWU" name="azi_-70_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-40_R.wav"/>
+      <FILE id="SIfC4i" name="azi_-70_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-50_L.wav"/>
+      <FILE id="A0LTfR" name="azi_-70_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-50_R.wav"/>
+      <FILE id="btZygu" name="azi_-70_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-60_L.wav"/>
+      <FILE id="opUWLp" name="azi_-70_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-60_R.wav"/>
+      <FILE id="RDlok0" name="azi_-70_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-70_L.wav"/>
+      <FILE id="n9jMt8" name="azi_-70_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-70_R.wav"/>
+      <FILE id="bYbVfc" name="azi_-70_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-80_L.wav"/>
+      <FILE id="rpGq2x" name="azi_-70_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-80_R.wav"/>
+      <FILE id="qqpyUB" name="azi_-70_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-90_L.wav"/>
+      <FILE id="Y5TzoH" name="azi_-70_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_-90_R.wav"/>
+      <FILE id="UQbJTt" name="azi_-70_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_0_L.wav"/>
+      <FILE id="ZYTPmr" name="azi_-70_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_0_R.wav"/>
+      <FILE id="grUGBZ" name="azi_-70_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_10_L.wav"/>
+      <FILE id="nqH7vb" name="azi_-70_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_10_R.wav"/>
+      <FILE id="oG8zBF" name="azi_-70_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_20_L.wav"/>
+      <FILE id="cS1g6v" name="azi_-70_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_20_R.wav"/>
+      <FILE id="HR49BR" name="azi_-70_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_30_L.wav"/>
+      <FILE id="pVNjPi" name="azi_-70_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_30_R.wav"/>
+      <FILE id="MvoTji" name="azi_-70_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_40_L.wav"/>
+      <FILE id="millAn" name="azi_-70_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_40_R.wav"/>
+      <FILE id="Caisut" name="azi_-70_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_50_L.wav"/>
+      <FILE id="NEKMGK" name="azi_-70_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_50_R.wav"/>
+      <FILE id="BbU6mt" name="azi_-70_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_60_L.wav"/>
+      <FILE id="HFqErB" name="azi_-70_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_60_R.wav"/>
+      <FILE id="qkkGYZ" name="azi_-70_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_70_L.wav"/>
+      <FILE id="QknoEd" name="azi_-70_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_70_R.wav"/>
+      <FILE id="WOWtET" name="azi_-70_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_80_L.wav"/>
+      <FILE id="u6N3kC" name="azi_-70_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_80_R.wav"/>
+      <FILE id="On5bnQ" name="azi_-70_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_90_L.wav"/>
+      <FILE id="CihdeA" name="azi_-70_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-70_ele_90_R.wav"/>
+      <FILE id="Ka2Hq6" name="azi_-80_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-10_L.wav"/>
+      <FILE id="zsWFpW" name="azi_-80_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-10_R.wav"/>
+      <FILE id="V0LmWC" name="azi_-80_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-20_L.wav"/>
+      <FILE id="zlbWbi" name="azi_-80_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-20_R.wav"/>
+      <FILE id="RjsByA" name="azi_-80_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-30_L.wav"/>
+      <FILE id="L1a5Pr" name="azi_-80_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-30_R.wav"/>
+      <FILE id="rPJWEE" name="azi_-80_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-40_L.wav"/>
+      <FILE id="jx4vL8" name="azi_-80_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-40_R.wav"/>
+      <FILE id="U6YX1k" name="azi_-80_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-50_L.wav"/>
+      <FILE id="OmgJwx" name="azi_-80_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-50_R.wav"/>
+      <FILE id="mSKv64" name="azi_-80_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-60_L.wav"/>
+      <FILE id="NkI3w0" name="azi_-80_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-60_R.wav"/>
+      <FILE id="ZrqOql" name="azi_-80_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-70_L.wav"/>
+      <FILE id="SZoYQy" name="azi_-80_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-70_R.wav"/>
+      <FILE id="zDYg47" name="azi_-80_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-80_L.wav"/>
+      <FILE id="GlfPbl" name="azi_-80_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-80_R.wav"/>
+      <FILE id="GAZ3QU" name="azi_-80_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-90_L.wav"/>
+      <FILE id="pIoMwP" name="azi_-80_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_-90_R.wav"/>
+      <FILE id="GYxqM8" name="azi_-80_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_0_L.wav"/>
+      <FILE id="bZ4BAW" name="azi_-80_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_0_R.wav"/>
+      <FILE id="IE9h79" name="azi_-80_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_10_L.wav"/>
+      <FILE id="h2OLv6" name="azi_-80_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_10_R.wav"/>
+      <FILE id="N9tuJT" name="azi_-80_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_20_L.wav"/>
+      <FILE id="B3tgkB" name="azi_-80_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_20_R.wav"/>
+      <FILE id="cJIXH2" name="azi_-80_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_30_L.wav"/>
+      <FILE id="U7PXuf" name="azi_-80_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_30_R.wav"/>
+      <FILE id="WNx7Ls" name="azi_-80_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_40_L.wav"/>
+      <FILE id="QbeemP" name="azi_-80_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_40_R.wav"/>
+      <FILE id="uEvKIi" name="azi_-80_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_50_L.wav"/>
+      <FILE id="eUad30" name="azi_-80_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_50_R.wav"/>
+      <FILE id="zdsKjp" name="azi_-80_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_60_L.wav"/>
+      <FILE id="u1PLpF" name="azi_-80_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_60_R.wav"/>
+      <FILE id="ljkvRN" name="azi_-80_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_70_L.wav"/>
+      <FILE id="TAReXp" name="azi_-80_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_70_R.wav"/>
+      <FILE id="ctNo83" name="azi_-80_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_80_L.wav"/>
+      <FILE id="FTTwvZ" name="azi_-80_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_80_R.wav"/>
+      <FILE id="Rvadcu" name="azi_-80_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_90_L.wav"/>
+      <FILE id="SyexQ2" name="azi_-80_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-80_ele_90_R.wav"/>
+      <FILE id="tL5Rq2" name="azi_-90_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-10_L.wav"/>
+      <FILE id="siVQbd" name="azi_-90_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-10_R.wav"/>
+      <FILE id="haM7p4" name="azi_-90_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-20_L.wav"/>
+      <FILE id="MF3Hot" name="azi_-90_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-20_R.wav"/>
+      <FILE id="ad0QPd" name="azi_-90_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-30_L.wav"/>
+      <FILE id="FJekEx" name="azi_-90_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-30_R.wav"/>
+      <FILE id="K5t4ze" name="azi_-90_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-40_L.wav"/>
+      <FILE id="WrsCSH" name="azi_-90_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-40_R.wav"/>
+      <FILE id="K4ep5N" name="azi_-90_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-50_L.wav"/>
+      <FILE id="nyWdHh" name="azi_-90_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-50_R.wav"/>
+      <FILE id="nbW6cz" name="azi_-90_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-60_L.wav"/>
+      <FILE id="hqa70Q" name="azi_-90_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-60_R.wav"/>
+      <FILE id="YIUQSY" name="azi_-90_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-70_L.wav"/>
+      <FILE id="EDqEzS" name="azi_-90_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-70_R.wav"/>
+      <FILE id="vc1Yee" name="azi_-90_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-80_L.wav"/>
+      <FILE id="reo3u4" name="azi_-90_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-80_R.wav"/>
+      <FILE id="ThTz35" name="azi_-90_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-90_L.wav"/>
+      <FILE id="uc96kh" name="azi_-90_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_-90_R.wav"/>
+      <FILE id="GDwI9X" name="azi_-90_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_0_L.wav"/>
+      <FILE id="ywOnsc" name="azi_-90_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_0_R.wav"/>
+      <FILE id="zfAZp5" name="azi_-90_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_10_L.wav"/>
+      <FILE id="xWgu30" name="azi_-90_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_10_R.wav"/>
+      <FILE id="bjJVUZ" name="azi_-90_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_20_L.wav"/>
+      <FILE id="pIve6I" name="azi_-90_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_20_R.wav"/>
+      <FILE id="vCVaXp" name="azi_-90_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_30_L.wav"/>
+      <FILE id="yk7Bgy" name="azi_-90_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_30_R.wav"/>
+      <FILE id="fozLfw" name="azi_-90_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_40_L.wav"/>
+      <FILE id="ydqs4s" name="azi_-90_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_40_R.wav"/>
+      <FILE id="G2Z41x" name="azi_-90_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_50_L.wav"/>
+      <FILE id="FZRzw9" name="azi_-90_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_50_R.wav"/>
+      <FILE id="Lc9WSi" name="azi_-90_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_60_L.wav"/>
+      <FILE id="yNDXl8" name="azi_-90_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_60_R.wav"/>
+      <FILE id="qv3gkx" name="azi_-90_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_70_L.wav"/>
+      <FILE id="yyplvm" name="azi_-90_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_70_R.wav"/>
+      <FILE id="t5wEd6" name="azi_-90_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_80_L.wav"/>
+      <FILE id="H5xKmy" name="azi_-90_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_80_R.wav"/>
+      <FILE id="GOdUGN" name="azi_-90_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_90_L.wav"/>
+      <FILE id="edGA9M" name="azi_-90_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_-90_ele_90_R.wav"/>
+      <FILE id="KxO4SO" name="azi_0_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-10_L.wav"/>
+      <FILE id="K87Iin" name="azi_0_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-10_R.wav"/>
+      <FILE id="GzTUby" name="azi_0_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-20_L.wav"/>
+      <FILE id="iZgKZ2" name="azi_0_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-20_R.wav"/>
+      <FILE id="BMZ31h" name="azi_0_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-30_L.wav"/>
+      <FILE id="qg4wer" name="azi_0_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-30_R.wav"/>
+      <FILE id="hlQ7JY" name="azi_0_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-40_L.wav"/>
+      <FILE id="qVVq8d" name="azi_0_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-40_R.wav"/>
+      <FILE id="o0LOtU" name="azi_0_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-50_L.wav"/>
+      <FILE id="ZbJMDO" name="azi_0_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-50_R.wav"/>
+      <FILE id="T5H9tY" name="azi_0_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-60_L.wav"/>
+      <FILE id="U2xpoJ" name="azi_0_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-60_R.wav"/>
+      <FILE id="BghDyh" name="azi_0_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-70_L.wav"/>
+      <FILE id="cvegHi" name="azi_0_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-70_R.wav"/>
+      <FILE id="GBFOsC" name="azi_0_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-80_L.wav"/>
+      <FILE id="nBUaKS" name="azi_0_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-80_R.wav"/>
+      <FILE id="ouzoYR" name="azi_0_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-90_L.wav"/>
+      <FILE id="BV0dlG" name="azi_0_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_-90_R.wav"/>
+      <FILE id="H357ui" name="azi_0_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_0_L.wav"/>
+      <FILE id="WsKs09" name="azi_0_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_0_R.wav"/>
+      <FILE id="Kmmf1Y" name="azi_0_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_10_L.wav"/>
+      <FILE id="UX3IKH" name="azi_0_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_10_R.wav"/>
+      <FILE id="azRNuS" name="azi_0_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_20_L.wav"/>
+      <FILE id="df3Fsp" name="azi_0_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_20_R.wav"/>
+      <FILE id="iJJRH0" name="azi_0_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_30_L.wav"/>
+      <FILE id="wGbJZT" name="azi_0_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_30_R.wav"/>
+      <FILE id="fCBAhe" name="azi_0_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_40_L.wav"/>
+      <FILE id="xMKgYu" name="azi_0_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_40_R.wav"/>
+      <FILE id="o9Qnc9" name="azi_0_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_50_L.wav"/>
+      <FILE id="lNSNwf" name="azi_0_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_50_R.wav"/>
+      <FILE id="trTwAD" name="azi_0_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_60_L.wav"/>
+      <FILE id="rYfnTB" name="azi_0_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_60_R.wav"/>
+      <FILE id="iIddzk" name="azi_0_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_70_L.wav"/>
+      <FILE id="Le2MGm" name="azi_0_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_70_R.wav"/>
+      <FILE id="joVrX0" name="azi_0_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_80_L.wav"/>
+      <FILE id="BHADrO" name="azi_0_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_80_R.wav"/>
+      <FILE id="uSpZ6F" name="azi_0_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_90_L.wav"/>
+      <FILE id="Rwg6KQ" name="azi_0_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_0_ele_90_R.wav"/>
+      <FILE id="CE4vKE" name="azi_10_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-10_L.wav"/>
+      <FILE id="k7kqLT" name="azi_10_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-10_R.wav"/>
+      <FILE id="LRKCQt" name="azi_10_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-20_L.wav"/>
+      <FILE id="b2T4B0" name="azi_10_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-20_R.wav"/>
+      <FILE id="cSkJCY" name="azi_10_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-30_L.wav"/>
+      <FILE id="J8yruF" name="azi_10_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-30_R.wav"/>
+      <FILE id="xhPsjH" name="azi_10_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-40_L.wav"/>
+      <FILE id="pGI5dE" name="azi_10_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-40_R.wav"/>
+      <FILE id="NUsrSV" name="azi_10_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-50_L.wav"/>
+      <FILE id="iQncVR" name="azi_10_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-50_R.wav"/>
+      <FILE id="jr8UhR" name="azi_10_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-60_L.wav"/>
+      <FILE id="NKZh7F" name="azi_10_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-60_R.wav"/>
+      <FILE id="UBKYmY" name="azi_10_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-70_L.wav"/>
+      <FILE id="Y5YOiB" name="azi_10_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-70_R.wav"/>
+      <FILE id="ph0bru" name="azi_10_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-80_L.wav"/>
+      <FILE id="vvF3DO" name="azi_10_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-80_R.wav"/>
+      <FILE id="jPoteG" name="azi_10_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-90_L.wav"/>
+      <FILE id="z84kPr" name="azi_10_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_-90_R.wav"/>
+      <FILE id="qeteNz" name="azi_10_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_0_L.wav"/>
+      <FILE id="ifx7an" name="azi_10_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_0_R.wav"/>
+      <FILE id="cekWV4" name="azi_10_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_10_L.wav"/>
+      <FILE id="HsRqjz" name="azi_10_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_10_R.wav"/>
+      <FILE id="slE1DL" name="azi_10_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_20_L.wav"/>
+      <FILE id="wOxoD1" name="azi_10_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_20_R.wav"/>
+      <FILE id="ARUygm" name="azi_10_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_30_L.wav"/>
+      <FILE id="Obqz3f" name="azi_10_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_30_R.wav"/>
+      <FILE id="UjOaL7" name="azi_10_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_40_L.wav"/>
+      <FILE id="No99Z4" name="azi_10_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_40_R.wav"/>
+      <FILE id="cY7NFB" name="azi_10_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_50_L.wav"/>
+      <FILE id="ahZjwg" name="azi_10_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_50_R.wav"/>
+      <FILE id="ks8uHd" name="azi_10_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_60_L.wav"/>
+      <FILE id="MI1H32" name="azi_10_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_60_R.wav"/>
+      <FILE id="pvKIEr" name="azi_10_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_70_L.wav"/>
+      <FILE id="ihP81Z" name="azi_10_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_70_R.wav"/>
+      <FILE id="V3hyQn" name="azi_10_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_80_L.wav"/>
+      <FILE id="Gsxp3D" name="azi_10_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_80_R.wav"/>
+      <FILE id="peUOL3" name="azi_10_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_90_L.wav"/>
+      <FILE id="PWxUWb" name="azi_10_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_10_ele_90_R.wav"/>
+      <FILE id="CoRXDJ" name="azi_20_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-10_L.wav"/>
+      <FILE id="BbAhJE" name="azi_20_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-10_R.wav"/>
+      <FILE id="MOdont" name="azi_20_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-20_L.wav"/>
+      <FILE id="W0PhM4" name="azi_20_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-20_R.wav"/>
+      <FILE id="vF7sz8" name="azi_20_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-30_L.wav"/>
+      <FILE id="EKeIS7" name="azi_20_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-30_R.wav"/>
+      <FILE id="Bnrl47" name="azi_20_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-40_L.wav"/>
+      <FILE id="ecv2Yj" name="azi_20_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-40_R.wav"/>
+      <FILE id="yFzvIX" name="azi_20_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-50_L.wav"/>
+      <FILE id="b3ZcpE" name="azi_20_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-50_R.wav"/>
+      <FILE id="RTqve5" name="azi_20_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-60_L.wav"/>
+      <FILE id="pyBIpK" name="azi_20_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-60_R.wav"/>
+      <FILE id="wMWCnB" name="azi_20_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-70_L.wav"/>
+      <FILE id="CA1ni2" name="azi_20_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-70_R.wav"/>
+      <FILE id="sT1jfm" name="azi_20_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-80_L.wav"/>
+      <FILE id="uASBi7" name="azi_20_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-80_R.wav"/>
+      <FILE id="ZW5BFl" name="azi_20_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-90_L.wav"/>
+      <FILE id="CYow8j" name="azi_20_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_-90_R.wav"/>
+      <FILE id="RzjfYq" name="azi_20_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_0_L.wav"/>
+      <FILE id="spmZrg" name="azi_20_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_0_R.wav"/>
+      <FILE id="XKcrve" name="azi_20_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_10_L.wav"/>
+      <FILE id="NQ07da" name="azi_20_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_10_R.wav"/>
+      <FILE id="BSn83L" name="azi_20_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_20_L.wav"/>
+      <FILE id="TcplZi" name="azi_20_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_20_R.wav"/>
+      <FILE id="B2ieF2" name="azi_20_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_30_L.wav"/>
+      <FILE id="Sf1CEN" name="azi_20_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_30_R.wav"/>
+      <FILE id="RCrSJC" name="azi_20_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_40_L.wav"/>
+      <FILE id="elA6Ra" name="azi_20_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_40_R.wav"/>
+      <FILE id="azO0JB" name="azi_20_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_50_L.wav"/>
+      <FILE id="mWvaYM" name="azi_20_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_50_R.wav"/>
+      <FILE id="wU5bdh" name="azi_20_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_60_L.wav"/>
+      <FILE id="AwKpee" name="azi_20_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_60_R.wav"/>
+      <FILE id="S3GsLB" name="azi_20_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_70_L.wav"/>
+      <FILE id="o8uBkJ" name="azi_20_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_70_R.wav"/>
+      <FILE id="DypGvl" name="azi_20_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_80_L.wav"/>
+      <FILE id="tjx7f9" name="azi_20_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_80_R.wav"/>
+      <FILE id="Sst87M" name="azi_20_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_90_L.wav"/>
+      <FILE id="GZtegs" name="azi_20_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_20_ele_90_R.wav"/>
+      <FILE id="WWfrkB" name="azi_30_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-10_L.wav"/>
+      <FILE id="DC6jXu" name="azi_30_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-10_R.wav"/>
+      <FILE id="VKyPSt" name="azi_30_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-20_L.wav"/>
+      <FILE id="EIASHd" name="azi_30_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-20_R.wav"/>
+      <FILE id="wk0wYj" name="azi_30_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-30_L.wav"/>
+      <FILE id="ewdjOe" name="azi_30_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-30_R.wav"/>
+      <FILE id="lx1HqV" name="azi_30_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-40_L.wav"/>
+      <FILE id="umWofo" name="azi_30_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-40_R.wav"/>
+      <FILE id="EeGGJD" name="azi_30_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-50_L.wav"/>
+      <FILE id="X8erLA" name="azi_30_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-50_R.wav"/>
+      <FILE id="YH2o0g" name="azi_30_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-60_L.wav"/>
+      <FILE id="eDv1dq" name="azi_30_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-60_R.wav"/>
+      <FILE id="EnIqK8" name="azi_30_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-70_L.wav"/>
+      <FILE id="dqP7FL" name="azi_30_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-70_R.wav"/>
+      <FILE id="Uas261" name="azi_30_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-80_L.wav"/>
+      <FILE id="BY5ARl" name="azi_30_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-80_R.wav"/>
+      <FILE id="EJaqMo" name="azi_30_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-90_L.wav"/>
+      <FILE id="rKR60l" name="azi_30_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_-90_R.wav"/>
+      <FILE id="dk85RO" name="azi_30_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_0_L.wav"/>
+      <FILE id="v9aw6G" name="azi_30_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_0_R.wav"/>
+      <FILE id="whVpcX" name="azi_30_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_10_L.wav"/>
+      <FILE id="RIZpym" name="azi_30_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_10_R.wav"/>
+      <FILE id="dQ3MIo" name="azi_30_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_20_L.wav"/>
+      <FILE id="VMmtbs" name="azi_30_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_20_R.wav"/>
+      <FILE id="Jz8FR9" name="azi_30_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_30_L.wav"/>
+      <FILE id="ffRHN6" name="azi_30_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_30_R.wav"/>
+      <FILE id="T9hF4C" name="azi_30_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_40_L.wav"/>
+      <FILE id="tO3O37" name="azi_30_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_40_R.wav"/>
+      <FILE id="e4K10G" name="azi_30_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_50_L.wav"/>
+      <FILE id="MP07Hs" name="azi_30_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_50_R.wav"/>
+      <FILE id="xtLmLq" name="azi_30_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_60_L.wav"/>
+      <FILE id="q839LD" name="azi_30_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_60_R.wav"/>
+      <FILE id="ebC8kf" name="azi_30_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_70_L.wav"/>
+      <FILE id="uqOeBK" name="azi_30_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_70_R.wav"/>
+      <FILE id="ZkMNRZ" name="azi_30_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_80_L.wav"/>
+      <FILE id="fFqFzb" name="azi_30_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_80_R.wav"/>
+      <FILE id="ACQNwF" name="azi_30_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_90_L.wav"/>
+      <FILE id="ohGefw" name="azi_30_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_30_ele_90_R.wav"/>
+      <FILE id="SlfZmn" name="azi_40_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-10_L.wav"/>
+      <FILE id="WscjUJ" name="azi_40_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-10_R.wav"/>
+      <FILE id="ukAq22" name="azi_40_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-20_L.wav"/>
+      <FILE id="W2qWtU" name="azi_40_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-20_R.wav"/>
+      <FILE id="IhnuqA" name="azi_40_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-30_L.wav"/>
+      <FILE id="E7wHXC" name="azi_40_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-30_R.wav"/>
+      <FILE id="cCo9PM" name="azi_40_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-40_L.wav"/>
+      <FILE id="h7KzXS" name="azi_40_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-40_R.wav"/>
+      <FILE id="TxJ4lL" name="azi_40_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-50_L.wav"/>
+      <FILE id="gaPI4B" name="azi_40_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-50_R.wav"/>
+      <FILE id="yGkXX6" name="azi_40_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-60_L.wav"/>
+      <FILE id="Bl4bYj" name="azi_40_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-60_R.wav"/>
+      <FILE id="WSEUzZ" name="azi_40_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-70_L.wav"/>
+      <FILE id="b42bQc" name="azi_40_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-70_R.wav"/>
+      <FILE id="o7iymJ" name="azi_40_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-80_L.wav"/>
+      <FILE id="M4aaQr" name="azi_40_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-80_R.wav"/>
+      <FILE id="rDPmht" name="azi_40_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-90_L.wav"/>
+      <FILE id="fjzrO4" name="azi_40_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_-90_R.wav"/>
+      <FILE id="BiQ110" name="azi_40_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_0_L.wav"/>
+      <FILE id="gAkgrJ" name="azi_40_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_0_R.wav"/>
+      <FILE id="ztCTuD" name="azi_40_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_10_L.wav"/>
+      <FILE id="EfZNJr" name="azi_40_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_10_R.wav"/>
+      <FILE id="Sq0jOb" name="azi_40_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_20_L.wav"/>
+      <FILE id="wwKwQS" name="azi_40_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_20_R.wav"/>
+      <FILE id="DDoK5z" name="azi_40_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_30_L.wav"/>
+      <FILE id="voCXVp" name="azi_40_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_30_R.wav"/>
+      <FILE id="O3Nhad" name="azi_40_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_40_L.wav"/>
+      <FILE id="JIFE6W" name="azi_40_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_40_R.wav"/>
+      <FILE id="DYwdjk" name="azi_40_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_50_L.wav"/>
+      <FILE id="v3hcEw" name="azi_40_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_50_R.wav"/>
+      <FILE id="pcTFk1" name="azi_40_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_60_L.wav"/>
+      <FILE id="rs0Ogl" name="azi_40_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_60_R.wav"/>
+      <FILE id="se12qQ" name="azi_40_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_70_L.wav"/>
+      <FILE id="VMefNR" name="azi_40_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_70_R.wav"/>
+      <FILE id="YbEN0k" name="azi_40_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_80_L.wav"/>
+      <FILE id="RdfijB" name="azi_40_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_80_R.wav"/>
+      <FILE id="zyEpDA" name="azi_40_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_90_L.wav"/>
+      <FILE id="uaxRCY" name="azi_40_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_40_ele_90_R.wav"/>
+      <FILE id="qL447C" name="azi_50_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-10_L.wav"/>
+      <FILE id="AU24Se" name="azi_50_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-10_R.wav"/>
+      <FILE id="LA15Gp" name="azi_50_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-20_L.wav"/>
+      <FILE id="QYVSCY" name="azi_50_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-20_R.wav"/>
+      <FILE id="Z6IdQE" name="azi_50_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-30_L.wav"/>
+      <FILE id="YId9OG" name="azi_50_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-30_R.wav"/>
+      <FILE id="IjOMpf" name="azi_50_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-40_L.wav"/>
+      <FILE id="m9AAqk" name="azi_50_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-40_R.wav"/>
+      <FILE id="utuJD4" name="azi_50_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-50_L.wav"/>
+      <FILE id="HKPGh0" name="azi_50_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-50_R.wav"/>
+      <FILE id="kMdXmu" name="azi_50_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-60_L.wav"/>
+      <FILE id="dmIPBQ" name="azi_50_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-60_R.wav"/>
+      <FILE id="T5Fh8G" name="azi_50_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-70_L.wav"/>
+      <FILE id="Ts4Jsd" name="azi_50_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-70_R.wav"/>
+      <FILE id="Fautuh" name="azi_50_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-80_L.wav"/>
+      <FILE id="TmbPOJ" name="azi_50_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-80_R.wav"/>
+      <FILE id="z5Nnw7" name="azi_50_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-90_L.wav"/>
+      <FILE id="eQnmcj" name="azi_50_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_-90_R.wav"/>
+      <FILE id="cD8E12" name="azi_50_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_0_L.wav"/>
+      <FILE id="XkELe4" name="azi_50_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_0_R.wav"/>
+      <FILE id="AR0BNe" name="azi_50_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_10_L.wav"/>
+      <FILE id="rjd2p9" name="azi_50_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_10_R.wav"/>
+      <FILE id="vHT1sE" name="azi_50_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_20_L.wav"/>
+      <FILE id="tRQeq2" name="azi_50_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_20_R.wav"/>
+      <FILE id="hwwZA8" name="azi_50_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_30_L.wav"/>
+      <FILE id="qgvBFd" name="azi_50_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_30_R.wav"/>
+      <FILE id="Dc4XA9" name="azi_50_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_40_L.wav"/>
+      <FILE id="y8bygc" name="azi_50_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_40_R.wav"/>
+      <FILE id="TUtZnX" name="azi_50_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_50_L.wav"/>
+      <FILE id="xDqPmi" name="azi_50_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_50_R.wav"/>
+      <FILE id="WFV1K0" name="azi_50_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_60_L.wav"/>
+      <FILE id="K8rD44" name="azi_50_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_60_R.wav"/>
+      <FILE id="Gi8Sz6" name="azi_50_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_70_L.wav"/>
+      <FILE id="bBhxgq" name="azi_50_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_70_R.wav"/>
+      <FILE id="im5VJP" name="azi_50_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_80_L.wav"/>
+      <FILE id="pIPBbf" name="azi_50_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_80_R.wav"/>
+      <FILE id="KfJPhH" name="azi_50_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_90_L.wav"/>
+      <FILE id="zt6zby" name="azi_50_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_50_ele_90_R.wav"/>
+      <FILE id="c96vcA" name="azi_60_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-10_L.wav"/>
+      <FILE id="ZTnUJE" name="azi_60_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-10_R.wav"/>
+      <FILE id="ADx1tP" name="azi_60_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-20_L.wav"/>
+      <FILE id="Ndrpjd" name="azi_60_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-20_R.wav"/>
+      <FILE id="qsfNNm" name="azi_60_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-30_L.wav"/>
+      <FILE id="SdjRdQ" name="azi_60_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-30_R.wav"/>
+      <FILE id="oNVQMg" name="azi_60_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-40_L.wav"/>
+      <FILE id="wrc7gH" name="azi_60_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-40_R.wav"/>
+      <FILE id="w3GoU9" name="azi_60_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-50_L.wav"/>
+      <FILE id="sBLZBV" name="azi_60_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-50_R.wav"/>
+      <FILE id="tvIYE1" name="azi_60_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-60_L.wav"/>
+      <FILE id="nc2toE" name="azi_60_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-60_R.wav"/>
+      <FILE id="VXLC6I" name="azi_60_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-70_L.wav"/>
+      <FILE id="Vt9aPq" name="azi_60_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-70_R.wav"/>
+      <FILE id="e6rtmm" name="azi_60_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-80_L.wav"/>
+      <FILE id="e2eqI3" name="azi_60_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-80_R.wav"/>
+      <FILE id="WJoXTw" name="azi_60_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-90_L.wav"/>
+      <FILE id="RFicjh" name="azi_60_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_-90_R.wav"/>
+      <FILE id="uqNeBj" name="azi_60_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_0_L.wav"/>
+      <FILE id="MOFAv2" name="azi_60_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_0_R.wav"/>
+      <FILE id="gh9VuN" name="azi_60_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_10_L.wav"/>
+      <FILE id="gzpBXO" name="azi_60_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_10_R.wav"/>
+      <FILE id="r2Gn2c" name="azi_60_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_20_L.wav"/>
+      <FILE id="XcXj7g" name="azi_60_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_20_R.wav"/>
+      <FILE id="zn3vSK" name="azi_60_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_30_L.wav"/>
+      <FILE id="APhOiG" name="azi_60_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_30_R.wav"/>
+      <FILE id="B3JYqA" name="azi_60_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_40_L.wav"/>
+      <FILE id="azHXJj" name="azi_60_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_40_R.wav"/>
+      <FILE id="luo6QW" name="azi_60_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_50_L.wav"/>
+      <FILE id="L7sQiv" name="azi_60_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_50_R.wav"/>
+      <FILE id="Hqkt76" name="azi_60_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_60_L.wav"/>
+      <FILE id="W2T62H" name="azi_60_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_60_R.wav"/>
+      <FILE id="DOVQhF" name="azi_60_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_70_L.wav"/>
+      <FILE id="zgbQRY" name="azi_60_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_70_R.wav"/>
+      <FILE id="EyZBbU" name="azi_60_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_80_L.wav"/>
+      <FILE id="DBXorx" name="azi_60_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_80_R.wav"/>
+      <FILE id="kr61mf" name="azi_60_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_90_L.wav"/>
+      <FILE id="LnOVkk" name="azi_60_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_60_ele_90_R.wav"/>
+      <FILE id="RlsGr8" name="azi_70_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-10_L.wav"/>
+      <FILE id="LEAiaI" name="azi_70_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-10_R.wav"/>
+      <FILE id="fboOAp" name="azi_70_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-20_L.wav"/>
+      <FILE id="LYMs6i" name="azi_70_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-20_R.wav"/>
+      <FILE id="OgReAT" name="azi_70_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-30_L.wav"/>
+      <FILE id="hngPCx" name="azi_70_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-30_R.wav"/>
+      <FILE id="slVPRb" name="azi_70_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-40_L.wav"/>
+      <FILE id="EJu7n5" name="azi_70_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-40_R.wav"/>
+      <FILE id="aaOh7g" name="azi_70_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-50_L.wav"/>
+      <FILE id="Z5a0QY" name="azi_70_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-50_R.wav"/>
+      <FILE id="ymtLQ6" name="azi_70_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-60_L.wav"/>
+      <FILE id="ph9HVO" name="azi_70_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-60_R.wav"/>
+      <FILE id="OqqPs4" name="azi_70_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-70_L.wav"/>
+      <FILE id="B6l0RK" name="azi_70_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-70_R.wav"/>
+      <FILE id="Vw6JD0" name="azi_70_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-80_L.wav"/>
+      <FILE id="bEbzPt" name="azi_70_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-80_R.wav"/>
+      <FILE id="bEULll" name="azi_70_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-90_L.wav"/>
+      <FILE id="Xfi7zZ" name="azi_70_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_-90_R.wav"/>
+      <FILE id="ahVFpp" name="azi_70_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_0_L.wav"/>
+      <FILE id="FFegGb" name="azi_70_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_0_R.wav"/>
+      <FILE id="b7F6V7" name="azi_70_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_10_L.wav"/>
+      <FILE id="nCjSD0" name="azi_70_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_10_R.wav"/>
+      <FILE id="WP47S2" name="azi_70_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_20_L.wav"/>
+      <FILE id="Os5Hch" name="azi_70_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_20_R.wav"/>
+      <FILE id="yb77tI" name="azi_70_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_30_L.wav"/>
+      <FILE id="AvX6Ii" name="azi_70_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_30_R.wav"/>
+      <FILE id="b5cpJq" name="azi_70_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_40_L.wav"/>
+      <FILE id="L0L16p" name="azi_70_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_40_R.wav"/>
+      <FILE id="z0TZ0z" name="azi_70_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_50_L.wav"/>
+      <FILE id="pEl2dQ" name="azi_70_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_50_R.wav"/>
+      <FILE id="nQVHNs" name="azi_70_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_60_L.wav"/>
+      <FILE id="v0xzvF" name="azi_70_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_60_R.wav"/>
+      <FILE id="g1s7Xd" name="azi_70_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_70_L.wav"/>
+      <FILE id="Ipz2vm" name="azi_70_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_70_R.wav"/>
+      <FILE id="ixVUZH" name="azi_70_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_80_L.wav"/>
+      <FILE id="GHn0D9" name="azi_70_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_80_R.wav"/>
+      <FILE id="Av7yvT" name="azi_70_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_90_L.wav"/>
+      <FILE id="LTysGn" name="azi_70_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_70_ele_90_R.wav"/>
+      <FILE id="ih5uoV" name="azi_80_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-10_L.wav"/>
+      <FILE id="mX0rSh" name="azi_80_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-10_R.wav"/>
+      <FILE id="GZO9Dp" name="azi_80_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-20_L.wav"/>
+      <FILE id="ufXQsm" name="azi_80_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-20_R.wav"/>
+      <FILE id="b9wRXA" name="azi_80_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-30_L.wav"/>
+      <FILE id="HnfiOv" name="azi_80_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-30_R.wav"/>
+      <FILE id="DwgNd5" name="azi_80_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-40_L.wav"/>
+      <FILE id="S4iDZT" name="azi_80_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-40_R.wav"/>
+      <FILE id="o6fH0l" name="azi_80_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-50_L.wav"/>
+      <FILE id="ndRdRu" name="azi_80_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-50_R.wav"/>
+      <FILE id="UqCFJB" name="azi_80_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-60_L.wav"/>
+      <FILE id="zroZ0G" name="azi_80_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-60_R.wav"/>
+      <FILE id="V2bJTA" name="azi_80_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-70_L.wav"/>
+      <FILE id="csOOtI" name="azi_80_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-70_R.wav"/>
+      <FILE id="JtvyDM" name="azi_80_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-80_L.wav"/>
+      <FILE id="Ech5TD" name="azi_80_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-80_R.wav"/>
+      <FILE id="REexBe" name="azi_80_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-90_L.wav"/>
+      <FILE id="DBgHhQ" name="azi_80_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_-90_R.wav"/>
+      <FILE id="kfJPY9" name="azi_80_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_0_L.wav"/>
+      <FILE id="lkpJJe" name="azi_80_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_0_R.wav"/>
+      <FILE id="XUYyaH" name="azi_80_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_10_L.wav"/>
+      <FILE id="BWE4Ij" name="azi_80_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_10_R.wav"/>
+      <FILE id="J4zF0s" name="azi_80_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_20_L.wav"/>
+      <FILE id="gSn2ES" name="azi_80_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_20_R.wav"/>
+      <FILE id="JyAUlp" name="azi_80_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_30_L.wav"/>
+      <FILE id="VQk8pD" name="azi_80_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_30_R.wav"/>
+      <FILE id="W9vHSZ" name="azi_80_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_40_L.wav"/>
+      <FILE id="dXOPdP" name="azi_80_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_40_R.wav"/>
+      <FILE id="WJLop3" name="azi_80_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_50_L.wav"/>
+      <FILE id="eB4YNk" name="azi_80_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_50_R.wav"/>
+      <FILE id="rMCOre" name="azi_80_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_60_L.wav"/>
+      <FILE id="uO2KIy" name="azi_80_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_60_R.wav"/>
+      <FILE id="HEIY80" name="azi_80_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_70_L.wav"/>
+      <FILE id="RAQdjb" name="azi_80_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_70_R.wav"/>
+      <FILE id="hPoa2p" name="azi_80_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_80_L.wav"/>
+      <FILE id="D4niHi" name="azi_80_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_80_R.wav"/>
+      <FILE id="VNVbJq" name="azi_80_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_90_L.wav"/>
+      <FILE id="faUcPZ" name="azi_80_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_80_ele_90_R.wav"/>
+      <FILE id="Jzx9NH" name="azi_90_ele_-10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-10_L.wav"/>
+      <FILE id="L5nGgd" name="azi_90_ele_-10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-10_R.wav"/>
+      <FILE id="zRYC8Y" name="azi_90_ele_-20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-20_L.wav"/>
+      <FILE id="ybINbd" name="azi_90_ele_-20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-20_R.wav"/>
+      <FILE id="T0LSJw" name="azi_90_ele_-30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-30_L.wav"/>
+      <FILE id="CAzmRL" name="azi_90_ele_-30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-30_R.wav"/>
+      <FILE id="H38RL9" name="azi_90_ele_-40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-40_L.wav"/>
+      <FILE id="cpkoqy" name="azi_90_ele_-40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-40_R.wav"/>
+      <FILE id="mCGeN1" name="azi_90_ele_-50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-50_L.wav"/>
+      <FILE id="QBuqVo" name="azi_90_ele_-50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-50_R.wav"/>
+      <FILE id="N4SHkn" name="azi_90_ele_-60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-60_L.wav"/>
+      <FILE id="wpqkVZ" name="azi_90_ele_-60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-60_R.wav"/>
+      <FILE id="mV23pH" name="azi_90_ele_-70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-70_L.wav"/>
+      <FILE id="DhxTMK" name="azi_90_ele_-70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-70_R.wav"/>
+      <FILE id="lZH2qH" name="azi_90_ele_-80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-80_L.wav"/>
+      <FILE id="SLdA90" name="azi_90_ele_-80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-80_R.wav"/>
+      <FILE id="VufsBW" name="azi_90_ele_-90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-90_L.wav"/>
+      <FILE id="lLz1Lr" name="azi_90_ele_-90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_-90_R.wav"/>
+      <FILE id="GuI6P6" name="azi_90_ele_0_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_0_L.wav"/>
+      <FILE id="AlgbIs" name="azi_90_ele_0_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_0_R.wav"/>
+      <FILE id="jNYK4B" name="azi_90_ele_10_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_10_L.wav"/>
+      <FILE id="ktWsPC" name="azi_90_ele_10_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_10_R.wav"/>
+      <FILE id="UfZiky" name="azi_90_ele_20_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_20_L.wav"/>
+      <FILE id="CYTHhX" name="azi_90_ele_20_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_20_R.wav"/>
+      <FILE id="kHUQQm" name="azi_90_ele_30_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_30_L.wav"/>
+      <FILE id="cZZ05o" name="azi_90_ele_30_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_30_R.wav"/>
+      <FILE id="nTJvhz" name="azi_90_ele_40_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_40_L.wav"/>
+      <FILE id="G6Dla2" name="azi_90_ele_40_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_40_R.wav"/>
+      <FILE id="EVNlZ9" name="azi_90_ele_50_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_50_L.wav"/>
+      <FILE id="io9mXm" name="azi_90_ele_50_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_50_R.wav"/>
+      <FILE id="L6oMys" name="azi_90_ele_60_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_60_L.wav"/>
+      <FILE id="TF2tBn" name="azi_90_ele_60_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_60_R.wav"/>
+      <FILE id="o2cRHZ" name="azi_90_ele_70_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_70_L.wav"/>
+      <FILE id="RgOjx3" name="azi_90_ele_70_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_70_R.wav"/>
+      <FILE id="FrKG9H" name="azi_90_ele_80_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_80_L.wav"/>
+      <FILE id="ATex6L" name="azi_90_ele_80_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_80_R.wav"/>
+      <FILE id="UHP8EP" name="azi_90_ele_90_L.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_90_L.wav"/>
+      <FILE id="LJSgdJ" name="azi_90_ele_90_R.wav" compile="0" resource="1"
+            file="Assets/hrir_wav/azi_90_ele_90_R.wav"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors_headless" showAllCode="1" useLocalCopy="1"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="BinauralPanner"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="BinauralPanner"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../external/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../modules"/>
+        <MODULEPATH id="juce_core" path="../../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../modules"/>
+        <MODULEPATH id="juce_events" path="../../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../external/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="../../../Music/JUCE/modules/juce_audio_processors_headless"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../external/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../external/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
