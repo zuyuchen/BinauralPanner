@@ -1,13 +1,14 @@
 # BinauralPanner
 
-A binaural audio panner plugin for spatial audio production. Place mono or stereo sources in 3D space using HRTF-based convolution for realistic headphone listening.
+A binaural audio panner plugin for spatial audio production using HRTF convolution.
 
 ## Features
 
-- **Azimuth & Elevation Control**: Position audio sources from -90° to +90° on both axes
-- **Bilinear Interpolation**: Smooth transitions between HRIR positions (10° grid)
-- **Real-time Convolution**: Low-latency HRTF processing suitable for DAW use
-- **Multiple Formats**: Builds as VST3 and AU (macOS)
+- **Azimuth & elevation control**: Full spherical positioning (-90° to +90° on both axes)
+- **Bilinear interpolation**: Smooth spatial transitions by mixing 4 neighboring HRIR positions (a, b, c, d)
+- **Crossfading**: Dual convolver sets (A/B) for glitch-free transitions when crossing grid boundaries
+- **Thread-safe loading**: All WAV decoding and impulse response loading happens off the audio thread
+- **CIPIC HRTF database**: 10° grid resolution with embedded HRIR data
 
 ## Download
 
@@ -17,24 +18,22 @@ Pre-built plugins are available on the [Releases](https://github.com/zuyuchen/Bi
 
 **macOS AU**: Copy `BinauralPanner.component` to `~/Library/Audio/Plug-Ins/Components/`
 
-**macOS/Windows VST3**: Copy `BinauralPanner.vst3` to your VST3 folder:
-- macOS: `~/Library/Audio/Plug-Ins/VST3/`
-- Windows: `C:\Program Files\Common Files\VST3\`
+**macOS VST3** *(coming soon)*: Copy `BinauralPanner.vst3` to `~/Library/Audio/Plug-Ins/VST3/`
 
 ## Building from Source
 
 ### Requirements
 
-- [JUCE](https://juce.com/) (tested with JUCE 7.x)
-- Xcode (macOS) or Visual Studio (Windows)
+- [JUCE](https://juce.com/) v8.x
+- Xcode (macOS)
 
 ### Build Steps
 
 1. Clone this repository
 2. Open `BinauralPanner.jucer` in Projucer
-3. Set your JUCE module path in Projucer
-4. Export to your IDE (Xcode/VS)
-5. Build the project
+3. Set your JUCE module path in Projucer (File → Global Paths)
+4. Click "Save and Open in IDE"
+5. In Xcode, select Release configuration and build (Cmd+B)
 
 ## HRIR Data
 
@@ -51,9 +50,29 @@ If you want to use different HRTF data:
 
 ## License
 
-[Add your license here]
+MIT License
+
+Copyright (c) 2026 Zuyu Chen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Acknowledgments
 
-- CIPIC HRTF Database, UC Davis
-- JUCE Framework by ROLI
+- [CIPIC HRTF Database](https://www.ece.ucdavis.edu/cipic/spatial-sound/hrtf-data/), UC Davis
+- [JUCE Framework](https://juce.com/)
