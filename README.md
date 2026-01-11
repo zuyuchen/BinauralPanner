@@ -10,6 +10,10 @@ A binaural audio panner plugin for spatial audio production using HRTF convoluti
 - **Thread-safe loading**: All WAV decoding and impulse response loading happens off the audio thread
 - **CIPIC HRTF database**: 10° grid resolution with embedded HRIR data
 
+## DEMO Video
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115873687802249&bvid=BV1Ne6QBpEC4&cid=25943678407&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
 ## Download
 
 Pre-built plugins are available on the [Releases](https://github.com/zuyuchen/BinauralPanner/releases) page.
