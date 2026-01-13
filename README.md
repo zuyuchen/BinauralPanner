@@ -3,7 +3,7 @@
 A binaural audio panner plugin for spatial audio production using HRTF convolution.
 
 ## Features
-
+- **Two Modes (Stereo and Binaural)**: Using power conservation law for stereo and HRIR Convolution for binaural 
 - **Azimuth & elevation control**: Full spherical positioning (-90° to +90° on both axes)
 - **Bilinear interpolation**: Smooth spatial transitions by mixing 4 neighboring HRIR positions (a, b, c, d)
 - **Crossfading**: Dual convolver sets (A/B) for glitch-free transitions when crossing grid boundaries
